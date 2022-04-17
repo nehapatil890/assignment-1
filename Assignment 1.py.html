@@ -1,0 +1,65 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+#Q.1 fibonnaci sequence using def function
+def fib_num(n):
+   if n<=0:
+      print("Fibonacci can't be computed")
+   elif n==1:
+      return 0
+   elif n==2:
+      return 1
+   else:
+      return fib_num(n-1)+fib_num(n-2)
+n=int(input("Enter n: "))
+print("{}th Fibonacci number is".format(n),fib_num(n))
+for i in range (fib_num(n)):
+    print(fib_num(i))
+
+
+# In[2]:
+
+
+#Q.1 Fibonacci sequence
+a=int(input("Enter the terms"))
+f=0 #first element of series
+s=1 #second element of series
+if a<=0:
+    print("The requested series is",f)
+else:
+    print(f,s,end=" ")
+for x in range(2,a):
+    next=f+s
+    print(next,end=" ")
+    f=s
+    s=next
+
+
+# In[4]:
+
+
+#Q.2 send the word to mirror dimension
+s=input('enter the string:')
+print(s[ : :-1])
+
+
+# In[5]:
+
+
+#Q.3 Don't go outside in odd day
+
+s=int(input('enter the date of the month'))
+if (s%2!=0):
+    print('do not go outside')
+else:
+    print('go outside')
+
+
+# In[ ]:
+
+
+
+
